@@ -39,7 +39,9 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     // codigo para implementar animaciones de gif
     implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.25")
-
-
-
+    // codigo para implementar conexion HTTP
+    implementation("com.android.volley:volley:1.2.1")
 }
+
+
+
