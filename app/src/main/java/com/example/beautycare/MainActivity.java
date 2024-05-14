@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 import android.view.WindowManager;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     String usuario;
@@ -28,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
-        SharedPreferences datos = getSharedPreferences("informacion", Context.MODE_PRIVATE);
-        usuario = datos.getString("user", "");
+        SharedPreferences datos = getSharedPreferences("UserInformation", Context.MODE_PRIVATE);
+        usuario = datos.getString("username", "");
 
 
         // para vista completa
@@ -44,19 +45,22 @@ public class MainActivity extends AppCompatActivity {
                 check();
             }
         };
-        handler.postDelayed(run, 3000);
+        handler.postDelayed(run, 1000);
     }
 
     public void check(){
+        Usuario userRegist = new Usuario();
+
         Intent i;
         if (usuario!=""){
+            Toast.makeText(this, "Bienvenido " + usuario, Toast.LENGTH_SHORT).show();
             i = new Intent(MainActivity.this, Index.class);
             startActivity(i);
             overridePendingTransition(R.anim.entrada, R.anim.salida);
             finish();
         }
         else {
-            i = new Intent(MainActivity.this, Index.class);
+            i = new Intent(MainActivity.this, Login.class);
             startActivity(i);
             overridePendingTransition(R.anim.entrada, R.anim.salida);
             finish();

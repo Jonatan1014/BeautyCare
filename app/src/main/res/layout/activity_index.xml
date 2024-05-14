@@ -14,7 +14,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bottomNavigationViewup" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,17 +23,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navigation"/>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationViewup"
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottomup" />
+        android:id="@+id/toolbar"
+        android:background="@color/red_dark"
+        app:logo="@drawable/florico"
+        app:title="BeautyCare"
+        app:titleTextAppearance="@style/ToolbarTextStyle"
+        app:titleMarginStart="30dp"
+        app:titleMargin="20dp"
 
 
+        />
 
 
 

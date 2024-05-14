@@ -1,6 +1,7 @@
 package com.example.beautycare;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -34,8 +35,7 @@ public class LoginTabFragment extends Fragment implements Response.Listener<JSON
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_login_tab, container, false);
+
         View vista = inflater.inflate(R.layout.fragment_login_tab, container, false);
         user = (EditText) vista.findViewById(R.id.login_email);
         pass = (EditText) vista.findViewById(R.id.login_password);
@@ -74,8 +74,18 @@ public class LoginTabFragment extends Fragment implements Response.Listener<JSON
         JSONObject jsonobject = null;
         try {
             jsonobject = jsonArray.getJSONObject(0);
-            usuario.setName(jsonobject.optString("name"));
-            usuario.setEmail(jsonobject.optString("user"));
+            usuario.setName(jsonobject.optString("username"));
+            usuario.setEmail(jsonobject.optString("email"));
+            Toast.makeText(getContext(), "Bienvenido " + usuario.getName()+"correo "+usuario.getEmail(), Toast.LENGTH_SHORT).show();
+            usuario.guardarDatos(getContext());
+
+            // Una vez valido el inicio de sesion nos vamos al index
+            Intent intent = new Intent(getActivity(), Index.class);
+            startActivity(intent);
+
+
+
+
 
         } catch (JSONException e) {
             throw new RuntimeException(e);
