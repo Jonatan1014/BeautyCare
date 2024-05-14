@@ -1,9 +1,9 @@
 package com.example.beautycare;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +30,7 @@ public class LoginTabFragment extends Fragment implements Response.Listener<JSON
     EditText user, pass;
     Button btn_login;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -40,6 +41,7 @@ public class LoginTabFragment extends Fragment implements Response.Listener<JSON
         pass = (EditText) vista.findViewById(R.id.login_password);
         rq = Volley.newRequestQueue(getContext());
         btn_login = (Button) vista.findViewById(R.id.login_button);
+
 
         btn_login.setOnClickListener(new View.OnClickListener() {
 
@@ -66,15 +68,15 @@ public class LoginTabFragment extends Fragment implements Response.Listener<JSON
 
     @Override
     public void onResponse(JSONObject response) {
-     Toast.makeText(getContext(), "Bienvenido", Toast.LENGTH_SHORT).show();
-     User usuario = new User();
+        Toast.makeText(getContext(), "Bienvenido", Toast.LENGTH_SHORT).show();
+        Usuario usuario = new Usuario();
         JSONArray jsonArray = response.optJSONArray("datos");
         JSONObject jsonobject = null;
         try {
             jsonobject = jsonArray.getJSONObject(0);
             usuario.setName(jsonobject.optString("name"));
             usuario.setEmail(jsonobject.optString("user"));
-            usuario.setPassword(jsonobject.optString("pwd"));
+
         } catch (JSONException e) {
             throw new RuntimeException(e);
         }

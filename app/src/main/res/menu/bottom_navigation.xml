@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/ProductosFragment"
+        android:icon="@drawable/homelight"
+        android:title="Productos" />
+    <item android:id="@+id/BeetyFragment"
+        android:icon="@drawable/robotligth"
+        android:title="Beety" />
+    <item android:id="@+id/IAFragment"
+        android:icon="@drawable/cameralight"
+        android:title="IA" />
+    <item android:id="@+id/ComunidadFragment"
+        android:icon="@drawable/userslight"
+        android:title="Comunidad" />
+    <item android:id="@+id/PerfilFragment"
+        android:icon="@drawable/usserligth"
+        android:title="Perfil" />
+</menu>

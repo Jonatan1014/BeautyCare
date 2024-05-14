@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
         else {
-            i = new Intent(MainActivity.this, Login.class);
+            i = new Intent(MainActivity.this, Index.class);
             startActivity(i);
             overridePendingTransition(R.anim.entrada, R.anim.salida);
             finish();

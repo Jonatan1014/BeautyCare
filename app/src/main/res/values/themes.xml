@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.BeautyCare" parent="Base.Theme.BeautyCare" />
+
+    <style name="BottomNavigation">
+        <item name="android:background">@color/red_dark</item>
+        <item name="itemIconTint">@color/white</item>
+        <item name="itemTextColor">@color/black</item>
+    </style>
 </resources>

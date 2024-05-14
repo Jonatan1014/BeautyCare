@@ -1,5 +1,7 @@
 package com.example.beautycare;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -35,6 +37,15 @@ public class Login extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         // para ocultar botones de navegacion
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+
+        Usuario usuario = new Usuario();
+        // guardar datos de forma persistente
+        SharedPreferences datos = getSharedPreferences("informacion", Context.MODE_PRIVATE);
+        SharedPreferences.Editor me = datos.edit();
+        me.putString("user",usuario.getName());
+        me.putString("email",usuario.getEmail());
+        me.commit();
+
 
         tabLayout = findViewById(R.id.tab_layout);
         viewPager2 = findViewById(R.id.view_pager);
