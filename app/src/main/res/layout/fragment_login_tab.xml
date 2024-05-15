@@ -17,10 +17,6 @@
             android:layout_marginTop="20dp"
             android:padding="20dp">
 
-            <ImageView
-                android:layout_width="341dp"
-                android:layout_height="200dp"
-                android:src="@drawable/loginimg" />
             <EditText
                 android:layout_width="300dp"
                 android:layout_height="60dp"
@@ -29,6 +25,8 @@
                 android:layout_marginTop="30dp"
                 android:padding="8dp"
                 android:hint="Correo"
+                android:fontFamily="@font/fugazoneregular"
+                android:textColor="@color/black"
                 android:drawableLeft="@drawable/baseline_alternate_email_24"
                 android:drawablePadding="8dp"
                 android:background="@drawable/edittext_bkg"/>
@@ -40,6 +38,8 @@
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
                 android:hint="Contraseña"
+                android:textColor="@color/black"
+                android:fontFamily="@font/fugazoneregular"
                 android:inputType="textPassword"
                 android:drawableLeft="@drawable/outline_admin_panel_settings_24"
                 android:drawablePadding="8dp"
@@ -50,8 +50,11 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:id="@+id/login_button"
+                android:backgroundTint="@color/red_dark"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fugazoneregular"
                 android:textSize="18sp"
-                android:text="Login"
+                android:text="Iniciar Sesion"
                 />
         </LinearLayout>
     </LinearLayout>

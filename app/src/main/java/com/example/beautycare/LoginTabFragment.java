@@ -54,7 +54,7 @@ public class LoginTabFragment extends Fragment implements Response.Listener<JSON
     }
 
     private void login(){
-        String url = "https://bd-app.000webhostapp.com/registrar.php?user="+user.getText().toString()+"&pwd="+pass.getText().toString();
+        String url = "https://bd-app.000webhostapp.com/sesion.php?user="+user.getText().toString()+"&pwd="+pass.getText().toString();
         jrq = new JsonObjectRequest(Request.Method.GET, url, null, this, this);
         rq.add(jrq);
 
