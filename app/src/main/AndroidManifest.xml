@@ -15,6 +15,9 @@
         android:theme="@style/Theme.BeautyCare"
         tools:targetApi="31">
         <activity
+            android:name=".DetailedItemsActivity"
+            android:exported="false" />
+        <activity
             android:name=".CarritoCompras"
             android:exported="false" />
         <activity

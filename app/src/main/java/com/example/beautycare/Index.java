@@ -27,11 +27,6 @@ public class Index extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_index);
 
-        Usuario usuario = new Usuario();
-
-
-        Toast.makeText(this, "Bienvenido " +usuario.getName(), Toast.LENGTH_SHORT).show();
-
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

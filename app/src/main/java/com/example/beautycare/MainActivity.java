@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent i;
         if (usuario!=""){
-            Toast.makeText(this, "Bienvenido " + usuario, Toast.LENGTH_SHORT).show();
+
             i = new Intent(MainActivity.this, Index.class);
             startActivity(i);
             overridePendingTransition(R.anim.entrada, R.anim.salida);

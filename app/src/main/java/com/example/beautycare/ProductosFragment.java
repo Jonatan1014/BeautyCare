@@ -1,64 +1,58 @@
 package com.example.beautycare;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ProductosFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.fragment.app.Fragment;
+
+import com.example.beautycare.databinding.FragmentProductosBinding;
+
+import java.util.ArrayList;
+
 public class ProductosFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public ProductosFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ProductosFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static ProductosFragment newInstance(String param1, String param2) {
-        ProductosFragment fragment = new ProductosFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    FragmentProductosBinding binding;
+    ListAdapterItems listAdapterItems;
+    ArrayList<ListDataItems> dataArrayList = new ArrayList<>();
+    ListDataItems listDataItems;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_productos, container, false);
+        binding = FragmentProductosBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
+
+        int[] imageList = {R.drawable.carga, R.drawable.login, R.drawable.lotounscreen, R.drawable.loginimg, R.drawable.signimg, R.drawable.carga, R.drawable.signimg};
+        int[] ingredientList = {R.string.pastaIngredients, R.string.maggiIngredients,R.string.cakeIngredients,R.string.pancakeIngredients,R.string.pizzaIngredients, R.string.burgerIngredients, R.string.friesIngredients};
+        int[] descList = {R.string.pastaDesc, R.string.maggieDesc, R.string.cakeDesc,R.string.pancakeDesc,R.string.pizzaDesc, R.string.burgerDesc, R.string.friesDesc};
+        String[] nameList = {"Pasta", "Maggi", "Cake", "Pancake", "Pizza","Burgers", "Fries"};
+        String[] timeList = {"30 mins", "2 mins", "45 mins","10 mins", "60 mins", "45 mins", "30 mins"};
+
+        for (int i = 0; i < imageList.length; i++) {
+            listDataItems = new ListDataItems(nameList[i], timeList[i], ingredientList[i], descList[i], imageList[i]);
+            dataArrayList.add(listDataItems);
+        }
+
+        listAdapterItems = new ListAdapterItems(requireActivity(), dataArrayList);
+        binding.listview.setAdapter(listAdapterItems);
+
+        binding.listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(requireContext(), DetailedItemsActivity.class);
+                intent.putExtra("name", nameList[i]);
+                intent.putExtra("time", timeList[i]);
+                intent.putExtra("ingredients", ingredientList[i]);
+                intent.putExtra("desc", descList[i]);
+                intent.putExtra("image", imageList[i]);
+                startActivity(intent);
+            }
+        });
+
+        return view;
     }
 }
