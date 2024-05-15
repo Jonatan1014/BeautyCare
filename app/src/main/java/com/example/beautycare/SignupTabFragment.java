@@ -59,7 +59,7 @@ public class SignupTabFragment extends Fragment implements Response.Listener<JSO
 
     private void signup() {
 
-        String url = "https://bd-app.000webhostapp.com/sesion.php?names=" + username.getText().toString() + "&user=" + email.getText().toString() + "&pwd=" + password.getText().toString();
+        String url = "https://bd-app.000webhostapp.com/registrar.php?names=" + username.getText().toString() + "&user=" + email.getText().toString() + "&pwd=" + password.getText().toString();
         jrq = new JsonObjectRequest(Request.Method.GET, url, null, this, this);
         rq.add(jrq);
 
