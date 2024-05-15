@@ -11,7 +11,7 @@
 
     <style name="roundedImageViewRounded" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:fontFamily">@font/fugazoneregular</item>
-        <item name="cornerSize">50%</item>
+        <item name="cornerSize">10%</item>
     </style>
 
 </resources>

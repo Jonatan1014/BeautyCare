@@ -6,11 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-
 import androidx.fragment.app.Fragment;
-
 import com.example.beautycare.databinding.FragmentProductosBinding;
-
 import java.util.ArrayList;
 
 public class ProductosFragment extends Fragment {

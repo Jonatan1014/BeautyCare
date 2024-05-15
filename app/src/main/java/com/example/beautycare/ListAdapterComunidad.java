@@ -27,9 +27,9 @@ public class ListAdapterComunidad extends ArrayAdapter<ListDataComunidad> {
             view = LayoutInflater.from(getContext()).inflate(R.layout.list_comunidad, parent, false);
         }
 
-        ImageView listImage = view.findViewById(R.id.listImage);
-        TextView listName = view.findViewById(R.id.listName);
-        TextView listTime = view.findViewById(R.id.listTime);
+        ImageView listImage = view.findViewById(R.id.listImageComunidad);
+        TextView listName = view.findViewById(R.id.listNameComunidad);
+        TextView listTime = view.findViewById(R.id.listTimeComunidad);
 
         listImage.setImageResource(listDataComunidad.image);
         listName.setText(listDataComunidad.name);

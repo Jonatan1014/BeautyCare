@@ -6,44 +6,41 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-
 import androidx.fragment.app.Fragment;
-
-import com.example.beautycare.databinding.FragmentProductosBinding;
-
+import com.example.beautycare.databinding.FragmentComunidadBinding;
 import java.util.ArrayList;
 
 public class ComunidadFragment extends Fragment {
 
-    FragmentProductosBinding binding;
-    ListAdapterItems listAdapterItems;
-    ArrayList<ListDataItems> dataArrayList = new ArrayList<>();
-    ListDataItems listDataItems;
+    FragmentComunidadBinding binding;
+    ListAdapterComunidad listAdapterComunidad;
+    ArrayList<ListDataComunidad> dataArrayList = new ArrayList<>();
+    ListDataComunidad listDataComunidad;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentProductosBinding.inflate(inflater, container, false);
+        binding = FragmentComunidadBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
-        int[] imageList = {R.drawable.carga, R.drawable.login, R.drawable.lotounscreen, R.drawable.loginimg, R.drawable.signimg, R.drawable.carga, R.drawable.signimg};
-        int[] ingredientList = {R.string.pastaIngredients, R.string.maggiIngredients,R.string.cakeIngredients,R.string.pancakeIngredients,R.string.pizzaIngredients, R.string.burgerIngredients, R.string.friesIngredients};
-        int[] descList = {R.string.pastaDesc, R.string.maggieDesc, R.string.cakeDesc,R.string.pancakeDesc,R.string.pizzaDesc, R.string.burgerDesc, R.string.friesDesc};
-        String[] nameList = {"Pasta", "Maggi", "Cake", "Pancake", "Pizza","Burgers", "Fries"};
-        String[] timeList = {"30 mins", "2 mins", "45 mins","10 mins", "60 mins", "45 mins", "30 mins"};
+        int[] imageList = {R.drawable.carga, R.drawable.login, R.drawable.lotounscreen, R.drawable.loginimg};
+        int[] ingredientList = {R.string.Sofiaalvarez, R.string.margaritalopez,R.string.jhoathannenemann,R.string.Cristianmesa};
+        int[] descList = {R.string.pastaDesc, R.string.maggieDesc, R.string.cakeDesc,R.string.pancakeDesc};
+        String[] nameList = {"Sofia Alvarez", "Margarita Lopez", "Jonathan Nenemann", "Cristian Mesa"};
+        String[] timeList = {"Barbero", "Estilsta Profesional", "Barbero Especializado","Modista Profesional"};
 
         for (int i = 0; i < imageList.length; i++) {
-            listDataItems = new ListDataItems(nameList[i], timeList[i], ingredientList[i], descList[i], imageList[i]);
-            dataArrayList.add(listDataItems);
+            listDataComunidad = new ListDataComunidad(nameList[i], timeList[i], ingredientList[i], descList[i], imageList[i]);
+            dataArrayList.add(listDataComunidad);
         }
 
-        listAdapterItems = new ListAdapterItems(requireActivity(), dataArrayList);
-        binding.listviewProductos.setAdapter(listAdapterItems);
+        listAdapterComunidad = new ListAdapterComunidad(requireActivity(), dataArrayList);
+        binding.listviewComunidad.setAdapter(listAdapterComunidad);
 
-        binding.listviewProductos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        binding.listviewComunidad.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(requireContext(), DetailedItemsActivity.class);
+                Intent intent = new Intent(requireContext(), DetailedComunidadActivity.class);
                 intent.putExtra("name", nameList[i]);
                 intent.putExtra("time", timeList[i]);
                 intent.putExtra("ingredients", ingredientList[i]);
