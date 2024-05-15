@@ -4,4 +4,5 @@
     <style name="ToolbarTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:fontFamily">@font/fugazoneregular</item>
     </style>
+
 </resources>

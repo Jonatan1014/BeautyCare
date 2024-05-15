@@ -54,7 +54,7 @@ public class LoginTabFragment extends Fragment implements Response.Listener<JSON
     }
 
     private void login(){
-        String url = "https://bd-app.000webhostapp.com/sesion.php?user="+user.getText().toString()+"&pwd="+pass.getText().toString();
+        String url = "https://bd-app.000webhostapp.com/registrar.php?user="+user.getText().toString()+"&pwd="+pass.getText().toString();
         jrq = new JsonObjectRequest(Request.Method.GET, url, null, this, this);
         rq.add(jrq);
 
@@ -62,7 +62,7 @@ public class LoginTabFragment extends Fragment implements Response.Listener<JSON
 
     @Override
     public void onErrorResponse(VolleyError volleyError) {
-        Toast.makeText(getContext(), "Error", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getContext(), "!Conexion Fallida! revisa tu conexion a internet", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -82,10 +82,6 @@ public class LoginTabFragment extends Fragment implements Response.Listener<JSON
             // Una vez valido el inicio de sesion nos vamos al index
             Intent intent = new Intent(getActivity(), Index.class);
             startActivity(intent);
-
-
-
-
 
         } catch (JSONException e) {
             throw new RuntimeException(e);

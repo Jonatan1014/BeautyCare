@@ -24,16 +24,30 @@
                 android:src="@drawable/signimg" />
 
             <EditText
-                android:id="@+id/signup_email"
+                android:id="@+id/signup_name"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/edittext_bkg"
-
                 android:drawableLeft="@drawable/baseline_alternate_email_24"
                 android:drawablePadding="8dp"
+                android:hint="Nombre"
+                android:fontFamily="@font/fugazoneregular"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/signup_email"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_bkg"
+                android:drawableLeft="@drawable/outline_admin_panel_settings_24"
+                android:drawablePadding="8dp"
                 android:hint="Correo"
+                android:fontFamily="@font/fugazoneregular"
+                android:inputType="text"
                 android:padding="8dp" />
 
             <EditText
@@ -43,22 +57,10 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/edittext_bkg"
-                android:drawableLeft="@drawable/outline_admin_panel_settings_24"
-                android:drawablePadding="8dp"
-                android:hint="Contraseña"
-                android:inputType="textPassword"
-                android:padding="8dp" />
-
-            <EditText
-                android:id="@+id/signup_confirm"
-                android:layout_width="300dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/edittext_bkg"
                 android:drawableLeft="@drawable/baseline_add_task_24"
                 android:drawablePadding="8dp"
-                android:hint="Confirmar Contraseña"
+                android:hint="Contraseña"
+                android:fontFamily="@font/fugazoneregular"
                 android:inputType="textPassword"
                 android:padding="8dp" />
 
@@ -70,6 +72,8 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:text="Registrar"
+                android:fontFamily="@font/fugazoneregular"
+                android:background="@color/red_dark"
                 android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
