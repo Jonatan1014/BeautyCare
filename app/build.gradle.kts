@@ -38,6 +38,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.camera.view)
+    implementation(libs.camera.lifecycle)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -45,6 +47,7 @@ dependencies {
     implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.25")
     // codigo para implementar conexion HTTP
     implementation("com.android.volley:volley:1.2.1")
+    implementation ("androidx.camera:camera-camera2:1.1.0")
 }
 
 
