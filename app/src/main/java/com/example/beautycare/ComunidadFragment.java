@@ -38,9 +38,9 @@ public class ComunidadFragment extends Fragment {
         }
 
         listAdapterItems = new ListAdapterItems(requireActivity(), dataArrayList);
-        binding.listview.setAdapter(listAdapterItems);
+        binding.listviewProductos.setAdapter(listAdapterItems);
 
-        binding.listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        binding.listviewProductos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(requireContext(), DetailedItemsActivity.class);

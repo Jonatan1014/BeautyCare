@@ -9,7 +9,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listview"
+        android:id="@+id/listviewProductos"
         android:scrollbars="vertical"
         android:layout_marginTop="12dp"
         tools:listitem="@layout/list_item"

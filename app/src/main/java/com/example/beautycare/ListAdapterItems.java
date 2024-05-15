@@ -29,11 +29,11 @@ public class ListAdapterItems extends ArrayAdapter<ListDataItems> {
 
         ImageView listImage = view.findViewById(R.id.listImage);
         TextView listName = view.findViewById(R.id.listName);
-        TextView listTime = view.findViewById(R.id.listTime);
+        TextView listPrecio = view.findViewById(R.id.listPrecio);
 
         listImage.setImageResource(listDataItems.image);
         listName.setText(listDataItems.name);
-        listTime.setText(listDataItems.time);
+        listPrecio.setText(listDataItems.precio);
 
         return view;
     }

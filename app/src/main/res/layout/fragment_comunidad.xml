@@ -6,15 +6,15 @@
     tools:context=".ComunidadFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:textColorLink="@color/white"
-        android:fontFamily="@font/gentyregular"
-        android:textColor="@color/black"
-        android:textSize="40sp"
-        android:text="Comunidad"/>
+        android:id="@+id/listviewComunidad"
+        android:scrollbars="vertical"
+        android:layout_marginTop="12dp"
+        tools:listitem="@layout/list_comunidad"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"/>
+
 
 </FrameLayout>
