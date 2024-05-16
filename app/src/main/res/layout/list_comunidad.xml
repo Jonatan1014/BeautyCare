@@ -25,16 +25,17 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+
         <TextView
-            android:layout_width="160dp"
-            android:layout_height="30dp"
             android:id="@+id/listNameComunidad"
-            android:text="Name"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:layout_marginTop="25dp"
+            android:layout_width="158dp"
+            android:layout_height="41dp"
             android:layout_marginStart="30dp"
-            android:layout_toEndOf="@id/listImageComunidad"/>
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/listImageComunidad"
+            android:fontFamily="@font/montserrat"
+            android:text="Name"
+            android:textSize="20sp" />
         <TextView
             android:layout_width="80dp"
             android:layout_height="50dp"
@@ -44,7 +45,7 @@
             android:layout_toEndOf="@id/listNameComunidad"
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
-            android:textColor="@color/white"/>
+            android:fontFamily="@font/montserrat"/>
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

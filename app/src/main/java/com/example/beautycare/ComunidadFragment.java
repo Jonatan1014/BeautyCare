@@ -23,11 +23,11 @@ public class ComunidadFragment extends Fragment {
         binding = FragmentComunidadBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
-        int[] imageList = {R.drawable.carga, R.drawable.login, R.drawable.lotounscreen, R.drawable.loginimg};
-        int[] ingredientList = {R.string.Sofiaalvarez, R.string.margaritalopez,R.string.jhoathannenemann,R.string.Cristianmesa};
-        int[] descList = {R.string.pastaDesc, R.string.maggieDesc, R.string.cakeDesc,R.string.pancakeDesc};
-        String[] nameList = {"Sofia Alvarez", "Margarita Lopez", "Jonathan Nenemann", "Cristian Mesa"};
-        String[] timeList = {"Barbero", "Estilsta Profesional", "Barbero Especializado","Modista Profesional"};
+        int[] imageList = {R.drawable.estelista1, R.drawable.estilista2, R.drawable.estilista5, R.drawable.estilista3, R.drawable.estilista4,R.drawable.estelista1, R.drawable.estilista2, R.drawable.estilista5, R.drawable.estilista3, R.drawable.estilista4};
+        int[] ingredientList = {R.string.Sofiaalvarez, R.string.margaritalopez,R.string.jhoathannenemann,R.string.Cristianmesa,R.string.ultimoestilista,R.string.Sofiaalvarez, R.string.margaritalopez,R.string.jhoathannenemann,R.string.Cristianmesa,R.string.ultimoestilista};
+        int[] descList = {R.string.pastaDesc, R.string.maggieDesc, R.string.cakeDesc,R.string.pancakeDesc,R.string.chocolateDesc,R.string.pastaDesc, R.string.maggieDesc, R.string.cakeDesc,R.string.pancakeDesc,R.string.chocolateDesc};
+        String[] nameList = {"Sofia Alvarez", "Margarita Lopez", "Jonathan Nenemann", "Cristian Mesa", "Ultimo Estilista","Sofia Alvarez", "Margarita Lopez", "Jonathan Nenemann", "Cristian Mesa", "Ultimo Estilista"};
+        String[] timeList = {"Barbero", "Estilsta Profesional", "Barbero Especializado","Modista Profesional", "Barbero Especializado","Barbero", "Estilsta Profesional", "Barbero Especializado","Modista Profesional", "Barbero Especializado"};
 
         for (int i = 0; i < imageList.length; i++) {
             listDataComunidad = new ListDataComunidad(nameList[i], timeList[i], ingredientList[i], descList[i], imageList[i]);

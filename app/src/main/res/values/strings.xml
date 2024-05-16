@@ -69,53 +69,32 @@ Add the maggi masala on to it
 \nAdd the maggi masala on to it
 \nWait for 2 mins
 \nMaggi is ready!</string>
-
-
-
-
-
-
-
-
-    //pasta
-    <string name="Sofiaalvarez">Pasta
-\nCream Cheese
-\nParmesan Cheese
-\nOlive Oil
-\nGarlic
-\nSalt Pepper</string>
-    <string name="Sofiaalvarezdescip">Cook your pasta until al dente
-\nSaute’ garlic in olive oil until fragrant
-\nAdd cream cheese, pasta cooking water, parmesan, and stir well
-\nDrain and add pasta to the skillet
-\nToss until well combined, adding some pasta water if needed</string>
-    //maggi
-    <string name="margaritalopez">Maggi Noodles
-\nWater
-\nMaggi Masala</string>
-    <string name="margaritadescrip">Add one and half cup of water
+    <string name="chocolateDesc">Add one and half cup of water
 \nAdd maggi noodles and boil it
 \nAdd the maggi masala on to it
 \nWait for 2 mins
 \nMaggi is ready!</string>
-    //cake
-    <string name="jhoathannenemann">Maggi Noodles
-\nWater
-\nMaggi Masala</string>
-    <string name="jhonatandescrip">Add one and half cup of water
-Add maggi noodles and boil it
-Add the maggi masala on to it
-\nWait for 2 mins
-\nMaggi is ready!</string>
-    //pancake
-    <string name="Cristianmesa">Maggi Noodles
-\nWater
-\nMaggi Masala</string>
-    <string name="cristianmesadescrip">Add one and half cup of water
-Add maggi noodles and boil it
-Add the maggi masala on to it
-\nWait for 2 mins
-\nMaggi is ready!</string>
-    //pizza
+
+
+
+
+
+
+
+
+    <string name="Sofiaalvarez">Sofia Alvarez, estilista profesional y experta en cuidado capilar</string>
+    <string name="Sofiaalvarezdescip">Sofia Alvarez es una estilista profesional con una pasión innata por el arte del cabello. Con más de una década de experiencia en la industria, Sofia ha perfeccionado su habilidad para crear cortes de cabello modernos y estilos elegantes que realzan la belleza natural de sus clientes. Además de ser una experta en cortes y peinados, Sofia es una defensora del cuidado capilar integral. Se especializa en tratamientos de acondicionamiento profundo, coloración y técnicas de estilismo para todo tipo de cabello. Su enfoque centrado en el cliente y su atención meticulosa al detalle la convierten en una de las estilistas más solicitadas en la industria del cuidado del cabello.</string>
+
+    <string name="margaritalopez">Margarita Lopez, especialista en belleza facial y cuidado de la piel</string>
+    <string name="margaritadescrip">Margarita Lopez es una experta en belleza facial con una pasión por ayudar a sus clientes a alcanzar una piel radiante y saludable. Con una formación en estética y dermatología, Margarita ofrece una amplia gama de tratamientos faciales personalizados para abordar las preocupaciones específicas de cada cliente, desde el acné hasta el envejecimiento prematuro. Su enfoque holístico del cuidado de la piel combina técnicas de vanguardia con ingredientes naturales para lograr resultados duraderos y transformadores. Además de ser una esteticista talentosa, Margarita es conocida por su calidez y profesionalismo, creando un ambiente acogedor donde los clientes pueden relajarse y rejuvenecer.</string>
+
+    <string name="jhoathannenemann">Jhoathan Nenemann, estilista y asesor de imagen personal</string>
+    <string name="jhonatandescrip">Jhoathan Nenemann es un estilista con una pasión por el arte del cambio de imagen personal. Con un ojo agudo para el estilo y la tendencia, Jhoathan trabaja en estrecha colaboración con sus clientes para crear looks que reflejen su personalidad y estilo de vida. Ya sea a través de un corte de cabello elegante, un cambio de color audaz o un tratamiento de estilismo experto, Jhoathan se dedica a ayudar a sus clientes a descubrir su mejor versión. Además de su experiencia en el salón, Jhoathan también ofrece servicios de asesoramiento de imagen personalizado, ayudando a sus clientes a desarrollar una presencia segura y poderosa en todos los aspectos de sus vidas.</string>
+
+    <string name="Cristianmesa">Cristian Mesa, artista del maquillaje y experto en belleza</string>
+    <string name="cristianmesadescrip">Cristian Mesa es un maquillador talentoso con una habilidad excepcional para realzar la belleza natural de sus clientes. Con una formación en arte y diseño, Cristian combina técnicas clásicas y contemporáneas para crear looks impresionantes que destacan las características únicas de cada individuo. Desde maquillaje de día elegante hasta looks de noche dramáticos, Cristian se esfuerza por superar las expectativas de sus clientes y dejar una impresión duradera. Además de su experiencia en maquillaje, Cristian es un apasionado defensor del autocuidado y la positividad corporal, trabajando para empoderar a sus clientes y ayudarlos a sentirse seguros y hermosos en su propia piel.</string>
+    <string name="ultimoestilista">Cristian Mesa es un maquillador talentoso con una habilidad excepcional para realzar la belleza natural de sus clientes. Con una formación en arte y diseño, Cristian combina técnicas clásicas y contemporáneas para crear looks impresionantes que destacan las características únicas de cada individuo. Desde maquillaje de día elegante hasta looks de noche dramáticos, Cristian se esfuerza por superar las expectativas de sus clientes y dejar una impresión duradera. Además de su experiencia en maquillaje, Cristian es un apasionado defensor del autocuidado y la positividad corporal, trabajando para empoderar a sus clientes y ayudarlos a sentirse seguros y hermosos en su propia piel.</string>
+
+
 
 </resources>
