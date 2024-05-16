@@ -23,11 +23,11 @@ public class ProductosFragment extends Fragment {
         binding = FragmentProductosBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
 
-        int[] imageList = {R.drawable.carga, R.drawable.login, R.drawable.lotounscreen, R.drawable.loginimg, R.drawable.signimg, R.drawable.carga, R.drawable.signimg};
-        int[] ingredientList = {R.string.pastaIngredients, R.string.maggiIngredients,R.string.cakeIngredients,R.string.pancakeIngredients,R.string.pizzaIngredients, R.string.burgerIngredients, R.string.friesIngredients};
-        int[] descList = {R.string.pastaDesc, R.string.maggieDesc, R.string.cakeDesc,R.string.pancakeDesc,R.string.pizzaDesc, R.string.burgerDesc, R.string.friesDesc};
-        String[] nameList = {"Pasta", "Maggi", "Cake", "Pancake", "Pizza","Burgers", "Fries"};
-        String[] precioList = {"30", "2", "45","10", "60", "45", "30"};
+        int[] imageList = {R.drawable.gel1, R.drawable.gel2, R.drawable.cremacabello1, R.drawable.cremacabello2, R.drawable.botellabarberia, R.drawable.botelladescuento, R.drawable.comboshampo, R.drawable.esmalte1,R.drawable.esmalte2 };
+        int[] ingredientList = {R.string.pastaIngredients, R.string.maggiIngredients,R.string.cakeIngredients,R.string.pancakeIngredients,R.string.pizzaIngredients, R.string.burgerIngredients, R.string.friesIngredients,R.string.burgerIngredients, R.string.friesIngredients};
+        int[] descList = {R.string.pastaDesc, R.string.maggieDesc, R.string.cakeDesc,R.string.pancakeDesc,R.string.pizzaDesc, R.string.burgerDesc, R.string.friesDesc,R.string.burgerDesc, R.string.friesDesc};
+        String[] nameList = {"Gel Ego", "Gel Moco", "Crema Sedal", "Crema Pantene", "Botella De Barberia","Combo Especial", "Combo Capilar", "Esmalte Masglo Rosa", "Esmalte Gris"};
+        String[] precioList = {"30.000", "25.000", "26.000", "45.000","10.000",  "60.000", "45.000", "30.000", "102.000"};
 
         for (int i = 0; i < imageList.length; i++) {
             listDataItems = new ListDataItems(nameList[i], precioList[i], ingredientList[i], descList[i], imageList[i]);

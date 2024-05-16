@@ -6,6 +6,13 @@
 
     </style>
 
+    <style name="BottomNavigation">
+        <item name="android:background">@color/dark_dark</item>
+        <item name="itemIconTint">@color/white</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
     <style name="mainstyle">
         <item name="android:textColor">@color/black</item>
     </style>
