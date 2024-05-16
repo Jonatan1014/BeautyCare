@@ -16,28 +16,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@android:color/white"
+        android:background="@color/white"
         android:padding="8dp"
         android:layout_alignParentBottom="true">
 
         <EditText
             android:id="@+id/edit_text_message"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_weight="1"
-            android:hint="Type a message"
-            android:background="@android:color/transparent"
+            android:background="@drawable/tab_bkg"
+            android:fontFamily="@font/montserrat"
+            android:hint="Escribe un mensaje"
+            android:maxLines="5"
             android:padding="12dp"
-            android:textSize="16sp"
-            android:maxLines="5" />
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <ImageButton
             android:id="@+id/button_send"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/paper_plane_regular"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="Send" />
+            android:contentDescription="Send"
+            android:src="@drawable/paper_plane_regular" />
 
     </LinearLayout>
 
