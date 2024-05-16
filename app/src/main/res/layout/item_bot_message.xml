@@ -3,6 +3,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:padding="8dp"
-    android:background="@drawable/ico_email"
-    android:textColor="@android:color/white"
+    style="@style/fondo_chat_beety_bot"
+    android:textColor="@color/white"
     android:textSize="16sp" />

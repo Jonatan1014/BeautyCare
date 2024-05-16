@@ -33,4 +33,22 @@
         <item name="fontFamily">@font/montserrat</item>
     </style>
 
+    <style name="fondo_chat_beety_user">
+        <item name="android:background">@color/color_chat_user</item>
+        <item name="itemIconTint">@color/white</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="fondo_chat_beety_bot">
+        <item name="android:background">@color/color_chat_bot</item>
+        <item name="itemIconTint">@color/white</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="fondo_chat">
+        <item name="android:background">@drawable/fondodark</item>
+    </style>
+
 </resources>

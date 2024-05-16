@@ -3,6 +3,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:padding="8dp"
-    android:background="@drawable/ico_candado"
+    style="@style/fondo_chat_beety_user"
     android:textColor="@android:color/white"
     android:textSize="16sp" />

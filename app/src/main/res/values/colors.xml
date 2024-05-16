@@ -9,6 +9,8 @@
     <color name="mainlight">#FFFFFFFF</color>
     <color name="maindark">#FF000000</color>
     <color name="entra_sesion_">#FFD7E3</color>
+    <color name="color_chat_user">#024742</color>
+    <color name="color_chat_bot">#212e36</color>
 
 
 </resources>
