@@ -48,6 +48,8 @@ dependencies {
     // codigo para implementar conexion HTTP
     implementation("com.android.volley:volley:1.2.1")
     implementation ("androidx.camera:camera-camera2:1.1.0")
+    implementation ("pub.devrel:easypermissions:3.0.0")
+
 }
 
 
