@@ -2,8 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="lavender">#860e0d</color>
 
     <color name="red_dark">#860e0d</color>
+    <color name="dark_dark">#191414</color>
+    <color name="dark_sesion">#1e1e1e</color>
+    <color name="mainlight">#FFFFFFFF</color>
+    <color name="maindark">#FF000000</color>
+    <color name="entra_sesion_">#fef7ff</color>
+
 
 </resources>

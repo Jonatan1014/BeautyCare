@@ -2,16 +2,18 @@
 <resources>
 
     <style name="ToolbarTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:fontFamily">@font/fugazoneregular</item>
+        <item name="android:fontFamily">@font/montserrat</item>
     </style>
 
     <style name="TabLayaoutTextStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:fontFamily">@font/fugazoneregular</item>
+        <item name="android:fontFamily">@font/montserrat</item>
     </style>
 
     <style name="roundedImageViewRounded" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:fontFamily">@font/fugazoneregular</item>
+        <item name="android:fontFamily">@font/montserrat</item>
         <item name="cornerSize">10%</item>
     </style>
+
+
 
 </resources>

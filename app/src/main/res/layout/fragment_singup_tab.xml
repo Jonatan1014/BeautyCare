@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="vertical">
 
         <LinearLayout
@@ -21,7 +22,7 @@
 
             <EditText
                 android:id="@+id/signup_name"
-                android:layout_width="300dp"
+                android:layout_width="290dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
@@ -29,12 +30,13 @@
                 android:drawableLeft="@drawable/baseline_alternate_email_24"
                 android:drawablePadding="8dp"
                 android:hint="Nombre"
-                android:fontFamily="@font/fugazoneregular"
+                style="@style/edittext_bkgtheme"
+                android:fontFamily="@font/montserrat"
                 android:padding="8dp" />
 
             <EditText
                 android:id="@+id/signup_email"
-                android:layout_width="300dp"
+                android:layout_width="290dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
@@ -42,13 +44,14 @@
                 android:drawableLeft="@drawable/outline_admin_panel_settings_24"
                 android:drawablePadding="8dp"
                 android:hint="Correo"
-                android:fontFamily="@font/fugazoneregular"
+                android:fontFamily="@font/montserrat"
                 android:inputType="text"
+                style="@style/edittext_bkgtheme"
                 android:padding="8dp" />
 
             <EditText
                 android:id="@+id/signup_password"
-                android:layout_width="300dp"
+                android:layout_width="290dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
@@ -56,21 +59,52 @@
                 android:drawableLeft="@drawable/baseline_add_task_24"
                 android:drawablePadding="8dp"
                 android:hint="Contraseña"
-                android:fontFamily="@font/fugazoneregular"
+                android:fontFamily="@font/montserrat"
                 android:inputType="textPassword"
+                style="@style/edittext_bkgtheme"
                 android:padding="8dp" />
 
             <Button
                 android:id="@+id/signup_button"
 
-                android:layout_width="300dp"
+                android:layout_width="290dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:text="Registrar"
-                android:fontFamily="@font/fugazoneregular"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat"
                 android:backgroundTint="@color/red_dark"
                 android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/fiestaunscreen" />
+
+            <TextView
+                style="@style/bienvenido_theme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Bienvenido a Beauti Care IA"
+                android:textSize="18sp" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/globosunscreen" />
+
         </LinearLayout>
     </LinearLayout>
 

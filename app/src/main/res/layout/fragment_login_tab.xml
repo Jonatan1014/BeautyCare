@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,6 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,45 +20,78 @@
             android:padding="20dp">
 
             <EditText
-                android:layout_width="300dp"
+                android:layout_width="290dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:id="@+id/login_email"
                 android:layout_marginTop="30dp"
                 android:padding="8dp"
                 android:hint="Correo"
-                android:fontFamily="@font/fugazoneregular"
-                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
                 android:drawableLeft="@drawable/baseline_alternate_email_24"
                 android:drawablePadding="8dp"
+                style="@style/edittext_bkgtheme"
                 android:background="@drawable/edittext_bkg"/>
             <EditText
-                android:layout_width="300dp"
+                android:layout_width="290dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:id="@+id/login_password"
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
                 android:hint="Contraseña"
-                android:textColor="@color/black"
-                android:fontFamily="@font/fugazoneregular"
+                android:fontFamily="@font/montserrat"
                 android:inputType="textPassword"
                 android:drawableLeft="@drawable/outline_admin_panel_settings_24"
                 android:drawablePadding="8dp"
+                style="@style/edittext_bkgtheme"
                 android:background="@drawable/edittext_bkg"/>
             <Button
-                android:layout_width="300dp"
+                android:layout_width="290dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:id="@+id/login_button"
                 android:backgroundTint="@color/red_dark"
                 android:textColor="@color/white"
-                android:fontFamily="@font/fugazoneregular"
+                android:fontFamily="@font/montserrat"
                 android:textSize="18sp"
                 android:text="Iniciar Sesion"
                 />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/fiestaunscreen" />
+
+            <TextView
+                style="@style/bienvenido_theme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Bienvenido a Beauti Care IA"
+                android:textSize="18sp" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/globosunscreen" />
+
+        </LinearLayout>
+
+
+
+
     </LinearLayout>
 
 </FrameLayout>

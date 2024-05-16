@@ -38,9 +38,9 @@
             android:id="@+id/view_start2"
             android:layout_width="wrap_content"
             android:layout_height="97dp"
-            android:fontFamily="@font/fugazoneregular"
+            android:fontFamily="@font/montserrat"
+            style="@style/mainstyle"
             android:text="Care IA"
-            android:textColor="@color/white"
             android:textSize="30sp" />
 
         <pl.droidsonroids.gif.GifImageView
