@@ -83,7 +83,35 @@ public class BeetyFragment extends Fragment {
         String botReply;
         if (lowercaseMessage.contains("belleza")) {
             botReply = "La belleza es una parte importante de nuestra vida. ¿Hay algo específico en lo que te gustaría enfocarte?";
-        } else if (lowercaseMessage.contains("hola")) {
+        }
+        else if (lowercaseMessage.contains("quien eres")) {
+            botReply = "¡Hola! Soy un asistente virtual diseñado para proporcionarte información y asistencia sobre productos de belleza y cuidado personal.";
+        } else if (lowercaseMessage.contains("que haces")) {
+            botReply = "Mi función principal es ayudarte con consultas relacionadas con productos de belleza y cuidado personal. Puedo ofrecerte recomendaciones, responder preguntas y más.";
+        } else if (lowercaseMessage.contains("como puedo usar el bot")) {
+            botReply = "¡Es fácil! Simplemente envíame un mensaje con tus consultas sobre belleza y cuidado personal, y haré mi mejor esfuerzo para ayudarte.";
+        } else if (lowercaseMessage.contains("que servicios ofreces")) {
+            botReply = "Ofrezco una variedad de servicios relacionados con productos de belleza y cuidado personal, como recomendaciones de productos, consejos de belleza, ofertas especiales y más.";
+        } else if (lowercaseMessage.contains("puedes responder preguntas de belleza")) {
+            botReply = "¡Por supuesto! Estoy aquí para ayudarte con cualquier pregunta que tengas sobre belleza, cuidado de la piel, cuidado del cabello, maquillaje y mucho más.";
+        } else if (lowercaseMessage.contains("puedes darme consejos de belleza")) {
+            botReply = "¡Claro! Estoy aquí para ofrecerte consejos útiles sobre belleza, desde rutinas de cuidado de la piel hasta técnicas de maquillaje y cuidado del cabello.";
+        } else if (lowercaseMessage.contains("como puedo contactarte")) {
+            botReply = "Puedes contactarme enviando un mensaje a través de esta plataforma en cualquier momento. Estoy aquí para ayudarte.";
+        } else if (lowercaseMessage.contains("donde puedo encontrar más información sobre ti")) {
+            botReply = "Puedes encontrar más información sobre mí y mis funciones en el sitio web oficial de BeautyCare. También puedes seguirnos en nuestras redes sociales para obtener actualizaciones.";
+        } else if (lowercaseMessage.contains("eres humano")) {
+            botReply = "No, soy un asistente virtual creado para ayudarte con consultas relacionadas con belleza y cuidado personal. ¡Puedes preguntarme lo que necesites!";
+        } else if (lowercaseMessage.contains("cual es tu proposito")) {
+            botReply = "Mi propósito es proporcionarte información útil y asistencia sobre productos de belleza y cuidado personal para ayudarte a lucir y sentirte mejor.";
+        } else if (lowercaseMessage.contains("eres inteligente")) {
+            botReply = "¡Gracias por el cumplido! Estoy diseñado para procesar y responder a tus consultas sobre belleza y cuidado personal de la mejor manera posible.";
+        } else if (lowercaseMessage.contains("eres útil")) {
+            botReply = "¡Espero serlo! Estoy aquí para ayudarte con cualquier pregunta o inquietud que tengas sobre belleza y cuidado personal.";
+        } else if (lowercaseMessage.contains("eres confiable")) {
+            botReply = "Haré todo lo posible para proporcionarte información precisa y útil sobre productos de belleza y cuidado personal. ¡Puedes confiar en mí!";
+        }
+        else if (lowercaseMessage.contains("hola")) {
                 botReply = "¡Hola! ¿En qué puedo ayudarte?";
         } else if (lowercaseMessage.contains("adiós")) {
             botReply = "¡Adiós! Espero verte pronto.";

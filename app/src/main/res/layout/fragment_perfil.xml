@@ -35,11 +35,14 @@
 
             <Button
                 android:id="@+id/btn_cerrarsesion"
-                android:layout_width="300dp"
+                android:layout_width="290dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
-                android:text="Cerrar Sesion"
+                android:text="Registrar"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:backgroundTint="@color/red_dark"
                 android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
